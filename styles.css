@@ -310,6 +310,12 @@ nav {
   position: relative;
 }
 
+.class__image video {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .class__image .class__img-1 {
   position: absolute;
   right: 0;
@@ -349,6 +355,12 @@ nav {
 .join__image iframe {
   border-radius: 10px;
   height: 500px;
+  cursor: pointer;
+}
+
+.class__video{
+  width: 100%;
+  border-radius: 10px;
   cursor: pointer;
 }
 
