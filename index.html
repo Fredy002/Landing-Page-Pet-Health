@@ -21,28 +21,32 @@
       <a href="#"><img src="assets/logo.png" alt="logo" /></a>
     </div>
     <ul class="nav__links">
-      <li class="link"><a href="#home">Home</a></li>
-      <li class="link"><a href="#product">Product</a></li>
-      <li class="link"><a href="#about">About Us</a></li>
-      <li class="link"><a href="#price">Price</a></li>
-      <li class="link"><a href="#review">Review</a></li>
+      <li class="link"><a href="#home" data-translate="home">Home</a></li>
+      <li class="link"><a href="#product" data-translate="product">Product</a></li>
+      <li class="link"><a href="#about" data-translate="about-us">About Us</a></li>
+      <li class="link"><a href="#price" data-translate="price">Price</a></li>
+      <li class="link"><a href="#review" data-translate="review">Review</a></li>
     </ul>
     <!--que se abra en otra pesatania-->
     <button class="btn">
       <a href="https://pet-health.netlify.app/" target="_blank">Sign Up</a></button>
+    <!-- Language dropdown -->
+    <select id="languageSwitcher" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
   </nav>
 
   <header id="home" class="section__container header__container">
     <div class="header__content">
       <span class="bg__blur"></span>
       <span class="bg__blur header__blur"></span>
-      <h4>PROTECT YOUR PET</h4>
-      <h1>MONITOR YOUR PETS IN <span>REAL TIME</span></h1>.
-      <p>
-        PetHealth revolutionises pet care with our innovative smart collar. Monitor your pet's health
-        pet's health, receive instant alerts and access veterinary services at the click of a button. Join today to
-        ensure
-        a healthier and safer future for your furry friend.
+      <h4 data-translate="protect-your-pet">PROTECT YOUR PET</h4>
+      <h1 data-translate="monitor-your-pet">MONITOR YOUR PETS IN <span>REAL TIME</span></h1>
+      <p data-translate="intro">
+        PetHealth revolutionises pet care with our innovative smart collar. Monitor your pet's health,
+        receive instant alerts and access veterinary services at the click of a button. Join today to
+        ensure a healthier and safer future for your furry friend.
       </p>
       <button class="btn">
         <a href="https://pet-health.netlify.app/" target="_blank">Join now</a>
@@ -57,7 +61,7 @@
 
   <section id="product" class="section__container explore__container">
     <div class="explore__header">
-      <h2 class="section__header">EXPLORE OUR PRODUCT</h2>
+      <h2 class="section__header" data-translate="explore-product">EXPLORE OUR PRODUCT</h2>
       <div class="explore__nav">
         <!--
           <span><i class="ri-arrow-left-line"></i></span>
@@ -68,42 +72,39 @@
     <div class="explore__grid">
       <div class="explore__card">
         <span><i class="ri-heart-pulse-line"></i></span>
-        <h4>Health Monitoring</h4>
-        <p>
+        <h4 data-translate="health-monitoring">Health Monitoring</h4>
+        <p data-translate="health-monitoring-desc">
           Find out how to monitor your pet's heart rate and temperature in real time to maintain his or her
           wellbeing.
         </p>
-        <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        <a href="#" data-translate="join-now">Join Now <i class="ri-arrow-right-line"></i></a>
       </div>
       <div class="explore__card">
         <span><i class="ri-stethoscope-line"></i></span>
-        <h4>Preliminary Diagnostics</h4>
-        <p>
+        <h4 data-translate="preliminary-diagnostics">Preliminary Diagnostics</h4>
+        <p data-translate="preliminary-diagnostics-desc">
           It uses the data collected to obtain preliminary diagnoses and detect potential health problems before they
           become serious.
-          before they become serious.
         </p>
-        <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        <a href="#" data-translate="join-now">Join Now <i class="ri-arrow-right-line"></i></a>
       </div>
       <div class="explore__card">
         <span><i class="ri-calendar-event-line"></i></span>
-        <h4>Appointment Scheduling</h4>
-        <p>
+        <h4 data-translate="appointment-scheduling">Appointment Scheduling</h4>
+        <p data-translate="appointment-scheduling-desc">
           Schedule appointments with affiliated vets directly from your mobile, sending your pet's health history in
           advance.
-          in advance.
         </p>
-        <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        <a href="#" data-translate="join-now">Join Now <i class="ri-arrow-right-line"></i></a>
       </div>
       <div class="explore__card">
         <span><i class="ri-alert-line"></i></span>
-        <h4>Health Alerts</h4>
-        <p>
+        <h4 data-translate="health-alerts">Health Alerts</h4>
+        <p data-translate="health-alerts-desc">
           Receive immediate alerts if abnormalities in your pet's vital signs are detected, enabling rapid action to be
           taken.
-          rapid action.
         </p>
-        <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        <a href="#" data-translate="join-now">Join Now <i class="ri-arrow-right-line"></i></a>
       </div>
     </div>
   </section>
@@ -116,51 +117,50 @@
       </video>
     </div>
     <div class="class__content">
-      <h2 class="section__header">THE PRODUCT YOU WILL GET HERE</h2>
-      <p>
+      <h2 class="section__header" data-translate="product-details">THE PRODUCT YOU WILL GET HERE</h2>
+      <p data-translate="product-details-desc">
         Driven by innovation and care for your pet's health, our smart collar is a state-of-the-art solution that
-        combines real-time monitoring with advanced diagnostic technology.
-        solution that combines real-time monitoring with advanced diagnostic technology. Each feature is designed to
-        keep you
-        designed to keep you connected to your pet's well-being and ensure effective health management.
+        combines real-time monitoring with advanced diagnostic technology. Each feature is designed to
+        keep you connected to your pet's well-being and ensure effective health management.
       </p>
       <button class="btn">
-        <a href="https://pet-health.netlify.app/register" target="_blank">Purchase Product</a></button>
+        <a href="https://pet-health.netlify.app/register" target="_blank" data-translate="purchase-product">Purchase
+          Product</a></button>
     </div>
   </section>
 
   <section id="about" class="section__container join__container">
-    <h2 class="section__header">WHY JOIN US?</h2>
-    <p class="section__subheader">Why join us?
-    <p class="section__subheader">
-      Our diverse user base creates a friendly and supportive environment, where you can connect with other pet owners
-      and stay motivated.
-      pet owners and stay motivated.
-    </p>
+    <h2 class="section__header" data-translate="why-join-us">WHY JOIN US?</h2>
+    <p class="section__subheader" data-translate="why-join-us-subheader">Our diverse user base creates a friendly and
+      supportive environment, where you can connect with other pet owners and stay motivated.</p>
     <div class="join__image">
       <div class="section__container__video">
-        <iframe class="class__video"src="https://www.youtube.com/embed/2PHEPZUNQ4U" frameborder="0" allowfullscreen></iframe>
-      </div>      
+        <iframe class="class__video" src="https://www.youtube.com/embed/2PHEPZUNQ4U" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
       <div class="join__grid">
         <div class="join__card">
           <span><i class="ri-health-book-fill"></i></span>
           <div class="join__card__content">
-            <h4>Continuous Monitoring</h4>
-            <p>Maximise your pet's wellbeing with real-time health monitoring</p>
+            <h4 data-translate="continuous-monitoring">Continuous Monitoring</h4>
+            <p data-translate="continuous-monitoring-desc">Maximise your pet's wellbeing with real-time health
+              monitoring</p>
           </div>
         </div>
         <div class="join__card">
           <span><i class="ri-stethoscope-line"></i></span>
           <div class="join__card__content">
-            <h4>Veterinary Services</h4>
-            <p>Easily access veterinary services and schedule appointments from the app</p>
+            <h4 data-translate="veterinary-services">Veterinary Services</h4>
+            <p data-translate="veterinary-services-desc">Easily access veterinary services and schedule appointments
+              from the app</p>
           </div>
         </div>
         <div class="join__card">
           <span><i class="ri-alert-fill"></i></span>
           <div class="join__card__content">
-            <h4>Health Alerts</h4>
-            <p>Receive immediate alerts if health issues are detected, for quick action</p>
+            <h4 data-translate="health-alerts">Health Alerts</h4>
+            <p data-translate="health-alerts-desc">Receive immediate alerts if health issues are detected, for quick
+              action</p>
           </div>
         </div>
       </div>
@@ -168,93 +168,91 @@
   </section>
 
   <section id="price" class="section__container price__container">
-    <h2 class="section__header">OUR PLANS</h2>
-    <p class="section__subheader">
+    <h2 class="section__header" data-translate="our-plans">OUR PLANS</h2>
+    <p class="section__subheader" data-translate="our-plans-subheader">
       Explore our subscription plans, each designed to offer the best care and monitoring for your pet.
-      pet.
     </p>
     <div class="price__grid">
       <div class="price__card">
         <div class="price__card__content">
-          <h4>Basic</h4>
+          <h4 data-translate="basic-plan">Basic</h4>
           <h3>$15/mes</h3>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Physical activity monitoring
+            <span data-translate="basic-plan-feature1">Physical activity monitoring</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Basic health alerts
+            <span data-translate="basic-plan-feature2">Basic health alerts</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Weekly health reports
+            <span data-translate="basic-plan-feature3">Weekly health reports</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Smart Collar
+            <span data-translate="basic-plan-feature4">Smart Collar</span>
           </p>
         </div>
-        <button class="btn price__btn">
-          Join Now</button>
+        <button class="btn price__btn" data-translate="join-now">Join Now</button>
       </div>
       <div class="price__card">
         <div class="price__card__content">
-          <h4>Premium</h4>
+          <h4 data-translate="premium-plan">Premium</h4>
           <h3>$30/mes</h3>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Real-time health monitoring
+            <span data-translate="premium-plan-feature1">Real-time health monitoring</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Detailed health alerts
+            <span data-translate="premium-plan-feature2">Detailed health alerts</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Behavioural analysis
+            <span data-translate="premium-plan-feature3">Behavioural analysis</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Online veterinary access
+            <span data-translate="premium-plan-feature4">Online veterinary access</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Smart Collar
+            <span data-translate="premium-plan-feature5">Smart Collar</span>
           </p>
         </div>
-        <button class="btn price__btn">Join Now</button>
+        <button class="btn price__btn" data-translate="join-now">Join Now</button>
       </div>
       <div class="price__card">
         <div class="price__card__content">
-          <h4>Ultimate</h4>
+          <h4 data-translate="ultimate-plan">Ultimate</h4>
           <h3>$50/mes</h3>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            All the benefits of Premium
+            <span data-translate="ultimate-plan-feature1">All the benefits of Premium</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Advanced monitoring with diagnostics
+            <span data-translate="ultimate-plan-feature2">Advanced monitoring with diagnostics</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Integration with affiliated veterinarians
+            <span data-translate="ultimate-plan-feature3">Integration with affiliated veterinarians</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            24/7 emergency service
+            <span data-translate="ultimate-plan-feature4">24/7 emergency service</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Personalised health reports
+            <span data-translate="ultimate-plan-feature5">Personalised health reports</span>
           </p>
           <p>
             <i class="ri-checkbox-circle-line"></i>
-            Smart Collar
+            <span data-translate="ultimate-plan-feature6">Smart Collar</span>
           </p>
         </div>
-        <button class="btn price__btn">Join Now</button>
+        <button class="btn price__btn" data-translate="join-now">Join Now</button>
       </div>
     </div>
   </section>
@@ -263,11 +261,11 @@
     <div class="section__container review__container">
       <span><i class="ri-double-quotes-r"></i></span>
       <div class="review__content">
-        <h4>RESEÑA</h4>
-        <p>
+        <h4 data-translate="review-title">RESEÑA</h4>
+        <p data-translate="review-content">
           "Using this collar has completely transformed the way I care for my cat. The sensors are incredibly accurate
           and it's reassuring to know that I can monitor his health at any time. The best thing is receiving immediate
-          alerts if something is wrong, which has helped us prevent emergency situations more than once. than once."
+          alerts if something is wrong, which has helped us prevent emergency situations more than once."
         </p>
         <div class="review__rating">
           <span><i class="ri-star-fill"></i></span>
@@ -280,8 +278,8 @@
           <div class="review__member">
             <img src="assets/frejola.png" alt="usuario con mascota" />
             <div class="review__member__details">
-              <h4>Rosy</h4>
-              <p>Cat Owner</p>
+              <h4 data-translate="reviewer-name">Rosy</h4>
+              <p data-translate="reviewer-role">Cat Owner</p>
             </div>
           </div>
           <div class="review__nav">
@@ -298,7 +296,7 @@
     <span class="bg__blur footer__blur"></span>
     <div class="footer__col">
       <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
-      <p>
+      <p data-translate="footer-intro">
         Take the first step towards healthier and safer care for your pet with our unbeatable price plans.
         Take care, protect and improve the health of your best friend!
       </p>
@@ -312,27 +310,39 @@
       </div>
     </div>
     <div class="footer__col">
-      <h4>Company</h4>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Business</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Franchises</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Partnerships</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Veterinary Care Network</a>
+      <h4 data-translate="footer-company">Company</h4>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-business">Business</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-franchises">Franchises</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-partnerships">Partnerships</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-vet-network">Veterinary Care Network</a>
     </div>
     <div class="footer__col">
-      <h4>About us</h4>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Blog</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Security</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Our Team</a>
+      <h4 data-translate="footer-about-us">About us</h4>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-blog">Blog</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-security">Security</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-team">Our Team</a>
     </div>
     <div class="footer__col">
-      <h4>Contact</h4>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Contact us</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Privacy Policy</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Terms & Conditions</a>
-      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank">Pet Health Calculator</a>
+      <h4 data-translate="footer-contact">Contact</h4>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-contact-us">Contact us</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-privacy">Privacy Policy</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-terms">Terms & Conditions</a>
+      <a href="https://www.linkedin.com/in/fredy-antonio-almeyda-alania/" target="_blank"
+        data-translate="footer-calculator">Pet Health Calculator</a>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
