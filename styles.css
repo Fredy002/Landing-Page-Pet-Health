@@ -126,6 +126,22 @@ nav {
   width: 50%;
 }
 
+#languageSwitcher {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#languageSwitcher:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+
 .header__container {
   position: relative;
   padding-top: 2rem;
